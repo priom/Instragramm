@@ -23,7 +23,6 @@ class PicsController < ApplicationController
   end
 
   def edit
-    
   end
 
   def update
@@ -42,7 +41,7 @@ class PicsController < ApplicationController
 
   private
     def pic_params
-      params.require(:pic).permit(:title, :description)
+      params.require(:pic).permit(:title, :description, :image)
     end
 
     def find_pic
